@@ -28,5 +28,8 @@
 设置SSH密钥对后，在本地仓库内执行： git remote add origin https://github.com/brightLLer/git_tutorials.git和git push -u origin master
 第一个命令是关联本地仓库和远程仓库，第二个命令是关联分支（-u的作用），推送本地仓库的内容，此后更新不需要再加-u
 
+17、克隆远程仓库：git clone git@git.com:username/xxx.git，其实上面的关联也可以写git remote add origin git@git.com:username/xxx.git，因为
+github支持各种协议，不过https协议会比较慢，而且可能要输入口令。
+
 
 
