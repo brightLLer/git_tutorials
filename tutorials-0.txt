@@ -23,4 +23,10 @@
 14、删除文件和添加文件的操作类似：rm，git rm, git commit，第一步是删除工作区的，第二三步是删除版本库的
 15、关于git checkout -- readme.txt的更进一步解释：用版本库的最新commit的文件内容去恢复工作区，意思上其实与丢弃工作区的修改一致(这点理解很重要)
 
+16、推送本地仓库的内容到github：先在github上创建同名仓库(确保github的账号设置下有你的公钥，查看本机的用户目录下是否有.ssh目录.ssh目录下是不是有id_rsa和id_rsa.pub，
+如果没有，先git bash下执行命令：ssh-keygen -t rsa -C "youremail@example.com"，一路回车下去)
+设置SSH密钥对后，在本地仓库内执行： git remote add origin https://github.com/brightLLer/git_tutorials.git和git push -u origin master
+第一个命令是关联本地仓库和远程仓库，第二个命令是关联分支（-u的作用），推送本地仓库的内容，此后更新不需要再加-u
+
+
 
